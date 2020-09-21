@@ -86,7 +86,7 @@ class _TristanMetaListener(Device):
         if ODIN_DATA_SERVERS is not None:
             for server in ODIN_DATA_SERVERS:
                 if server is not None:
-                    base_port = 5000
+                    base_port = 10000
                     for odin_data in server.processes:
                         port = base_port + 8
                         self.ip_list.append("tcp://{}:{}".format(odin_data.IP, port))
